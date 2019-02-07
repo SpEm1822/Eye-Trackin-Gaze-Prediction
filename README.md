@@ -1,4 +1,4 @@
-# Eye Tracker
+# Eye Tracker & gaz prediction
 Implemented and improved the iTracker model proposed in the paper [Eye Tracking for Everyone](https://arxiv.org/abs/1606.05814).
 
 In this modified model, the only difference between the modified model and the iTracker model is
