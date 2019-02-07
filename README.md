@@ -1,14 +1,7 @@
 # Eye Tracker
 Implemented and improved the iTracker model proposed in the paper [Eye Tracking for Everyone](https://arxiv.org/abs/1606.05814).
 
-![](itracker_arch.png)
-*<center><h3>Figure 1: iTracker architecture</h3></center>*
-
-![](itracker_adv_arch.png)
-*<center><h3>Figure 2: modified iTracker architecture</h3></center>*
-
-Figures 1 and 2 show the architectures of the iTracker model
-and the modified model. The only difference between the modified model and the iTracker model is
+In this modified model, the only difference between the modified model and the iTracker model is
 that we concatenate the face layer FC-F1 and face mask layer FC-FG1 first, after applying a fully connected layer FC-F2,
 we then concatenate the eye layer FC-E1 and FC-F2 layer.
 We claim that this modified architecture is superior to the iTracker architecture.
@@ -36,7 +29,6 @@ You can find a pretrained (on the smaller dataset) model under the pretrained_mo
 # FAQ
 1) What are the datasets?
 
-The original dataset comes from the [GazeCapture](http://gazecapture.csail.mit.edu/) project. The dataset involves over 1400 subjects and results in more than 2 million face images. Due to the limitation of computation power, a much [smaller dataset](http://hugochan.net/download/eye_tracker_train_and_val.npz) with 48000 training samples and 5000 validation samples was used here. Each sample contains 5 items: face, left eye, right eye, face mask and labels.
+The original dataset comes from the [GazeCapture](http://gazecapture.csail.mit.edu/) project. The dataset involves over 1400 subjects and results in more than 2 million face images. Due to the limitation of computation power, a much [smaller dataset] with 48000 training samples and 5000 validation samples was used here. Each sample contains 5 items: face, left eye, right eye, face mask and labels.
 
-# Other implementations
-For pytorch implementations, see [GazeCapture](https://github.com/CSAILVision/GazeCapture).
+
