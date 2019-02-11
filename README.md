@@ -1,4 +1,14 @@
 # Eye Tracker & gaz prediction
+
+I) Preprocessing:
+
+The preprocessing part was partly inspired by this tutorial:
+
+https://docs.opencv.org/3.4.1/d7/d8b/tutorial_py_face_detection.html
+
+
+2)Model and Results:
+
 Implemented and improved the iTracker model proposed in the paper [Eye Tracking for Everyone](https://arxiv.org/abs/1606.05814).
 
 In this modified model, the only difference between the modified model and the iTracker model is
