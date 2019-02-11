@@ -29,11 +29,14 @@ You can find a pretrained (on the smaller dataset) model under the pretrained_mo
 1) What are the datasets?
 
 The original dataset comes from the [GazeCapture](http://gazecapture.csail.mit.edu/) project. The dataset involves over 1400 subjects and results in more than 2 million face images. Due to the limitation of computation power, a much [smaller dataset] with 48000 training samples and 5000 validation samples was used here. Each sample contains 5 items: face, left eye, right eye, face mask and labels.
+
 2) Python 3 Installation & Setup Guide 
 Please follow these instructions for installing Python packaging:
 https://packaging.python.org/tutorials/installing-packages/
+
 3) For TensorFlow installation :
 https://www.tensorflow.org/install
+
 4) For opencv packagin installation :
 https://pypi.org/project/opencv-python/
 
