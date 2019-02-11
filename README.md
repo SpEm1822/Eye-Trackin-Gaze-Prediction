@@ -47,7 +47,7 @@ https://packaging.python.org/tutorials/installing-packages/
 3) For TensorFlow installation:
 https://www.tensorflow.org/install
 
-4) For opencv packagin installation:
+4) For opencv packaging installation:
 https://pypi.org/project/opencv-python/
 
 
