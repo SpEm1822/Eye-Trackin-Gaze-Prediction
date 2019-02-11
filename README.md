@@ -4,15 +4,14 @@ Implemented and improved the iTracker model proposed in the paper [Eye Tracking 
 In this modified model, the only difference between the modified model and the iTracker model is
 that we concatenate the face layer FC-F1 and face mask layer FC-FG1 first, after applying a fully connected layer FC-F2,
 we then concatenate the eye layer FC-E1 and FC-F2 layer.
-We claim that this modified architecture is superior to the iTracker architecture.
-Intuitively, concatenating the face mask information together with the eye information
-may confuse the model since the face mask information is irrelevant to the eye information.
-Even though the iTracker model succeeded to learn this fact from the data,
-the modified model outperforms the iTracker model by explictlying encoded with this knowledge.
-In experiments, the modified model converged faster (28 epochs vs. 40+ epochs) and achieved better validation
-error (2.19 cm vs. 2.514 cm).
-The iTracker model was implemented in itracker.py and the modified one was
-implemented in itracker_adv.py.
+This modified architecture is superior to the iTracker architecture.
+Improvements in speed because the modified model converged faster 
+28 epochs vs. 40+ epochs. In this case a smaller number of epochs is enaugh to converge to acceptable level of accuracy.
+Improvements in accuracy and achieved better validation error 
+2.19 cm vs. 2.51 cm).
+In fact, makes the model faster because the model only takes the relevant information from the eye.
+
+The iTracker model was implemented in itracker.py and the modified one was implemented in itracker_adv.py.
 Note that a smaller dataset (i.e., a subset of the full dataset in the original paper) was used in experiments and no data augmentation was applied.
 This smaller dataset contains 48,000 training samples and 5,000 validation samples.
 
