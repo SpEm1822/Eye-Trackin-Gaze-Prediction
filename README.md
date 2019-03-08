@@ -17,6 +17,15 @@ The output is the distance, in centimeters, from the camera.
 (1) the image of the face together with its location in the image (termed face grid), and (2) the image of the eyes. 
 The output is the distance, in centimeters, from the camera.
 
+# Data-driven approach:
+
+In this project, I used a subset of the GazeCapture, containing data from over 1450 people consisting of almost 1:5M frames from a wide variety of backgrounds, recorded under variable lighting conditions and unconstrained head motion.
+And here we have the preprocessing : first : Load image, 2) convert to grayscale, 3) find face, and find eye. 
+The extraction of Face and eye extraction took:  0.032s (my code).
+
+
+
+
 
 # Eye Tracker & gaz prediction
 
