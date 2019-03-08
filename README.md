@@ -1,3 +1,12 @@
+# Overview 
+The goal of this project is to put the power of eye tracking by building a software that works on commodity hardware such as mobile phones and tablets, without the need for additional sensors or devices. The prediction of gaze is an important tool in many domains from scientific research to commercial applications for example: human–computer interaction techniques to medical diagnoses to psychological studies to computer vision, eye tracking has applications in many areas such as AR, VR, Robotic... In these fields, the trend to capture subconscious and unbiased data through implicit methods is growing. Eye tracking is among the most effective of these techniques. Increase in use of eye tracking technology in the military and aerospace sectors drive the growth of the global eye tracking market. Moreover, the rise in investment on smart & wearable technology across the industry verticals and increase in demand for assistive communication devices, also fuel the growth of the eye tracking market. The growth in automation and rapid acceptance of robotics technology across the industry verticals restrict the market growth. Conversely, the rapid growth of eye tracking in new applications such as lie-detecting systems, video gaming industry, and cognitive testing, also in aviation industries and R&D in the field of augmented reality, virtual reality, and others are projected to drive the market in near future. Eye tracking lets you see how consumers react to different marketing messages and understand their cognitive engagement, in real time. It minimizes recall errors and the social desirability effect while revealing information conventional research methods normally miss.
+
+# Motivation for this project
+
+The goal of this project is to put the power of eye tracking in everyone’s palm by building eye tracking software that works on commodity hardware such as mobile phones and tablets, without the need for additional sensors or devices.
+
+
+
 # Eye Tracker & gaz prediction
 
 I) Preprocessing:
