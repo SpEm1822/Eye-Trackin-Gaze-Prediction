@@ -23,8 +23,7 @@ In this project, I used a subset of the GazeCapture, containing data from over 1
 And here we have the preprocessing : first : Load image, 2) convert to grayscale, 3) find face, and find eye. 
 The extraction of Face and eye extraction took:  0.032s (my code).
 
-
-
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/41544179/54061325-36747a80-41b5-11e9-909c-fb95b7fc2fd4.png">
 
 
 # Eye Tracker & gaz prediction
