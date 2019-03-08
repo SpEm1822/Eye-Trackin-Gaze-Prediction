@@ -1,39 +1,44 @@
 # Overview 
-The goal of this project is to put the power of eye tracking by building a software that works on commodity hardware such as mobile phones and tablets, without the need for additional sensors or devices. The prediction of gaze is an important tool in many domains from scientific research to commercial applications for example: human–computer interaction techniques to medical diagnoses to psychological studies to computer vision, eye tracking has applications in many areas such as AR, VR, Robotic... In these fields, the trend to capture subconscious and unbiased data through implicit methods is growing. Eye tracking is among the most effective of these techniques. Increase in use of eye tracking technology in the military and aerospace sectors drive the growth of the global eye tracking market. Moreover, the rise in investment on smart & wearable technology across the industry verticals and increase in demand for assistive communication devices, also fuel the growth of the eye tracking market. The growth in automation and rapid acceptance of robotics technology across the industry verticals restrict the market growth. Conversely, the rapid growth of eye tracking in new applications such as lie-detecting systems, video gaming industry, and cognitive testing, also in aviation industries and R&D in the field of augmented reality, virtual reality, and others are projected to drive the market in near future. Eye tracking lets you see how consumers react to different marketing messages and understand their cognitive engagement, in real time. It minimizes recall errors and the social desirability effect while revealing information conventional research methods normally miss.
 
-# Motivation for this project
+### Motivation
+This project aims to put the power of eye tracking in everyone's palm, by building a software that works on commodity hardware such as mobile phones and tablets, without the need for additional sensors or devices. 
 
-The goal of this project is to put the power of eye tracking in everyone’s palm by building eye tracking software that works on commodity hardware such as mobile phones and tablets, without the need for additional sensors or devices.
+Gaze prediction is able to capture unbiased subconcious information, and is important to many domains, including:
+ - Human–computer interaction
+ - Medical diagnoses
+ - Psychological studies
+ - Computer vision
+ - Augmented and Virtual reality
+ - Robotics
+ - Military / Aerospace
+ - Smart and Wearable devices
+ - Lie detection
+ - Video games
+ - Marketing research
 
+# Eye Tracker & Gaze Prediction
 
+1) Preprocessing:
 
-# Eye Tracker & gaz prediction
-
-I) Preprocessing:
-
-The preprocessing part was partly inspired by this tutorial:
+The preprocessing is partly inspired by this tutorial:
 
 https://docs.opencv.org/3.4.1/d7/d8b/tutorial_py_face_detection.html
 
 
 2)Model and Results:
 
-Implemented and improved the iTracker model proposed in the paper [Eye Tracking for Everyone](https://arxiv.org/abs/1606.05814).
+The project implements and improves the iTracker model proposed in the paper [Eye Tracking for Everyone](https://arxiv.org/abs/1606.05814).
 
-In this modified model, the only difference between the modified model and the iTracker model is
-that we concatenate the face layer FC-F1 and face mask layer FC-FG1 first, after applying a fully connected layer FC-F2,
-we then concatenate the eye layer FC-E1 and FC-F2 layer.
-This modified architecture is superior to the iTracker architecture.
-Improvements in speed because the modified model converged faster 
-28 epochs vs. 40+ epochs. In this case a smaller number of epochs is enaugh to converge to acceptable level of accuracy.
-Improvements in accuracy and achieved better validation error 
-2.19 cm vs. 2.51 cm).
-In fact, makes the model faster because the model only takes the relevant information from the eye.
+In this modification, the face layer FC-F1 and face mask layer FC-FG1 are concatenated first, after applying a fully connected layer FC-F2. The eye layer FC-E1 and FC-F2 layer are then concatenated.
 
-The iTracker model was implemented in itracker.py and the modified one was implemented in itracker_adv.py.
+This improves the convergence speed from the iTracker model from 40+ epochs to 28 to converge to acceptible accuracy.
+This model also improves validation error from 2.51 cm to 2.19 cm, compared to the iTracker model.
+These improvements are the result of the model only taking relevant information from the eye, rather than the entire face.
+
+The iTracker model is implemented in itracker.py.
+The modified model is implemented in itracker_adv.py.
 Note that a smaller dataset (i.e., a subset of the full dataset in the original paper) was used in experiments and no data augmentation was applied.
 This smaller dataset contains 48,000 training samples and 5,000 validation samples.
-
 
 # Get started
 To train the model: run
