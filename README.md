@@ -5,6 +5,12 @@ The goal of this project is to put the power of eye tracking by building a softw
 
 The goal of this project is to put the power of eye tracking in everyone’s palm by building eye tracking software that works on commodity hardware such as mobile phones and tablets, without the need for additional sensors or devices.
 
+# Solution
+
+I have utilized an eye tracking CNN models algorithm results from each model to bluid an eye tracking model which achieves a significant reduction in error over previous approaches while running in real time (10–15fps) on a modern mobile device.
+input to the model: 
+(1) the image of the face together with its location in the image (termed face grid), and (2) the image of the eyes. 
+The output is the distance, in centimeters, from the camera.
 
 
 # Eye Tracker & gaz prediction
