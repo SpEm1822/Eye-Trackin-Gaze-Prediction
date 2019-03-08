@@ -12,7 +12,7 @@ input to the model:
 (1) the image of the face together with its location in the image (termed face grid), and (2) the image of the eyes. 
 The output is the distance, in centimeters, from the camera.
 
-![Image description](/Users/lindamokrane/Desktop/Insight/Github/image.jpg)
+![Image description](/Users/lindamokrane/Desktop/Insight/Github/image2.pdf)
 
 
 # Eye Tracker & gaz prediction
