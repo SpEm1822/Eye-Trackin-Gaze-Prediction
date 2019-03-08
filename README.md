@@ -12,6 +12,9 @@ input to the model:
 (1) the image of the face together with its location in the image (termed face grid), and (2) the image of the eyes. 
 The output is the distance, in centimeters, from the camera.
 
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/41544179/54061096-21e3b280-41b4-11e9-96d9-463ac9ed25ad.png">
+
+
 ![Image description](/Users/lindamokrane/Desktop/Insight/Github/image2.pdf)
 
 
