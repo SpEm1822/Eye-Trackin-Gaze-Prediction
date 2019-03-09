@@ -17,6 +17,27 @@ Gaze prediction is able to capture unbiased subconcious information, and is impo
  - Marketing research
 
 # Eye Tracker & Gaze Prediction
+=======
+# Solution
+
+I have utilized an eye tracking CNN models algorithm results from each model to bluid an eye tracking model which achieves a significant reduction in error over previous approaches while running in real time (10–15fps) on a modern mobile device.
+input to the model: 
+(1) the image of the face together with its location in the image (termed face grid), and (2) the image of the eyes. 
+The output is the distance, in centimeters, from the camera.
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/41544179/54061096-21e3b280-41b4-11e9-96d9-463ac9ed25ad.png">
+
+(1) the image of the face together with its location in the image (termed face grid), and (2) the image of the eyes. 
+The output is the distance, in centimeters, from the camera.
+
+# Data-driven approach:
+
+In this project, I used a subset of the GazeCapture, containing data from over 1450 people consisting of almost 1:5M frames from a wide variety of backgrounds, recorded under variable lighting conditions and unconstrained head motion.
+And here we have the preprocessing : first : Load image, 2) convert to grayscale, 3) find face, and find eye. 
+The extraction of Face and eye extraction took:  0.032s (my code).
+
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/41544179/54061325-36747a80-41b5-11e9-909c-fb95b7fc2fd4.png">
+
 
 1) Preprocessing:
 
